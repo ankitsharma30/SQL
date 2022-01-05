@@ -4,7 +4,7 @@ ini_set('display_errors',1);
 ?>
 <!DOCTYPE html>
 <html>
-<head>die($data['id']);
+<head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Contact Form </title>
 </head>
