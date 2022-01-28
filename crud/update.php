@@ -1,11 +1,9 @@
 <?php
 
 
-
-
 $conn=mysqli_connect('localhost','pheuture','pheuture', 'pheuture'); 
 $id = $_GET['id'];
-$qry = mysqli_query($db,"select * from userdata where id='$id'"); 
+$qry = mysqli_query($conn,"select * from userdata where id='$id'"); 
 
 $data = mysqli_fetch_array($qry); 
 
@@ -33,10 +31,13 @@ if(isset($_POST['update']))
 
 <h3>Update Data</h3>
 
+
 <form method="POST">
-  <input type="text" name="name" value="<?php echo $data['name'] ?>" placeholder="Enter Full Name" Required>
-  <input type="text" name="email" value="<?php echo $data['email'] ?>" placeholder="Enter email" Required>
-  <input type="text" name="phone" value="<?php echo $data['phone'] ?>" placeholder="Enter phone" Required>
-  <input type="text" name="message" value="<?php echo $data['message'] ?>" placeholder="Enter message" Required>
+    <body style="background-color: #800000">
+</body>
+  NAME<br><input type="text" name="name" value="<?php echo $data['name']; ?>"  Required><br>
+  EMAIL<br><input type="text" name="email" value="<?php echo $data['email']; ?>"  Required><br>
+  CONTACT<br><input type="text" name="phone" value="<?php echo $data['phone']; ?>" Required><br>
+  MESSAGE<br><input type="text" name="message" value="<?php echo $data['message']; ?>"  Required><br>
   <input type="submit" name="update" value="Update">
 </form>

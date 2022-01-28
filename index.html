@@ -1,111 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>CSS Template</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-/* Style the header */
-header {
-  background-color: #666;
-  padding: 30px;
-  text-align: center;
-  font-size: 35px;
-  color: white;
-}
-
-/* Container for flexboxes */
-section {
-  display: -webkit-flex;
-  display: flex;
-}
-
-/* Style the navigation menu */
-nav {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  background: #ccc;
-  padding: 20px;
-}
-
-/* Style the list inside the menu */
-nav ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-/* Style the content */
-article {
-  -webkit-flex: 3;
-  -ms-flex: 3;
-  flex: 3;
-  background-color: #f1f1f1;
-  padding: 10px;
-}
-
-/* Style the footer */
-footer {
-  background-color: #777;
-  padding: 10px;
-  text-align: center;
-  color: white;
-}
-
-/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
-@media (max-width: 600px) {
-  section {
-    -webkit-flex-direction: column;
-    flex-direction: column;
-  }
-}
-</style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
 </head>
-<body>
-
-
-
-<header>
-  <h2>Registration Form</h2>
-</header>
-
-
+<body style="background-color: rgb(189, 149, 149);">
+  <center>
+    
+  </style>
+  <h1>Registration Form</h1><br>
+  <form action="" method="post">
+  <img src="formpic.jpeg" alt="Registration form"><br>
+  <label style="color: hsl(59, 83%, 21%); font-size: larger;" for="username"><b>UserName:</b></label><br>
+  <input style="background-color: rgb(255, 196, 1); type="text" id="username" placeholder="Enter UserName"required><br><br>
+  <label style="color: hsl(59, 96%, 51%); font-size: larger;" for="password">PassWord:</label><br>
+  <input style="background-color: rgb(255, 196, 1); type="text" id="password" placeholder="Enter Password"required><br><br>
+  <label for="email">Email</label><br>
+  <input style="background-color: rgb(255, 196, 1); style="color: hsl(59, 96%, 51%); font-size: larger;" type="email" id="email" placeholder="Enter Password"required><br><br>
+  <p> Select your Gender</p>
+  Male <input type="radio" name="male" value="male">
+  <input style="color: hsl(59, 96%, 51%); font-size: larger; background-color: rgb(19, 18, 17);" type="submit" value="sign in"><br>
   
-  <article>
-    <form action="Welcome.php" method="POST">
-     <br> <br>
-      
-  Name:   <br>     <input type="text" name="name" placeholder="Enter your name"><br><br>
-  Email:    <br>   <input type="text" name="email" placeholder="Enter your email"><br><br>
-  password:  <br>  <input type="password" name="password" placeholder="please enter your passsword "><br><br>
-  Contact:  <br>   <input type="text" name="contact" placeholder="Enter your contact number"><br><br>
-  Gender:    <br>  <input type="radio" name="gender" value="female">female
-  <input type="radio" name="gender" value="male">male<br>
-
-  <label for="country">Choose a country:</label>
-  <select name="country" id="country">
-    <option value="india">India</option>
-    <option value="australia">australia</option>
-    <option value="England">England</option>
-    <option value="others">others</option>
-    <img src="./formpic.jpeg" alt="Registration Form" width="460" height="345">
-  </select><br>
-  </article>
- 
-
-
-<footer>
-  <input type="submit" value="submit form">
-</footer>
+</form>
+</center>
 
 </body>
 </html>
-

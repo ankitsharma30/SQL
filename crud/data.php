@@ -10,7 +10,20 @@
 }
 
 th, td {
+  text-align: left;<!DOCTYPE html>
+<html>
+    <head> 
+        <style>
+          
+            table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
   text-align: left;
+  padding: 8px;
+}
   padding: 8px;
 }
 
@@ -48,7 +61,7 @@ echo "<table>
     <th> name </th>
     <th>  email </th>
     <th> phone </th>
-    <th> mezsage </th>
+    <th> message </th>
     <th> action </th>
     </tr>";
 while($row = mysqli_fetch_array($result)){   
@@ -64,11 +77,11 @@ echo "
       <td>  ".$row['message']." </td>";
 
   echo "<td>";
-  echo "<a href=/delete.php?id=" . $row['id'] . ">";
+  echo "<a href=delete.php?id=" . $row['id'] . ">";
   
   echo "Delete";
   echo "</a> <br>";
-  echo "<a href=/update.php?id=" . $row['id'] . ">";
+  echo "<a href=update.php?id=" . $row['id'] . ">";
   echo "update";
   echo "</a>";
   echo "</td>";

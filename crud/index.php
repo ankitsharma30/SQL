@@ -12,7 +12,7 @@ ini_set('display_errors',1);
 <body>
 <fieldset>
 <legend>Contact Form</legend>
-<form name="frmContact" method="POST" action="contact.php">
+<form name="frmContact" method="POST" action="./contact.php">
 <p>
 <label for="Name">Name </label>
 <input type="text" name="Name" id="Name">

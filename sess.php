@@ -1,6 +1,6 @@
 
 <?php
-
+include 'registration form.php';
 session_start();
 if(isset($_SESSION['fname'])){
   $fname = $_SESSION['fname'];
